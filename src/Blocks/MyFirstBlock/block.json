@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "shb/guidle-iframe",
+	"title": "Guidle iframe",
+	"category": "widgets",
+	"icon": "embed-generic",
+	"description": "",
+	"keywords": ["events", "guidle"],
+	"version": "0.0.1",
+	"textdomain": "shp_gantrisch_base",
+	"editorScript": "file:./assets/dist/scripts/editor.js",
+	"viewScript": "file:./assets/dist/scripts/view.js",
+	"editorStyle": "file:./assets/dist/styles/editor.min.css",
+	"style": "file:./assets/dist/styles/shared.min.css",
+	"supports": {
+		"align": ["wide", "full"]
+	},
+	"attributes": {
+		"url": {
+			"type": "string"
+		}
+	}
+}
