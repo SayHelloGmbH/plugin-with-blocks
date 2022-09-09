@@ -62,6 +62,17 @@ customised for use with this file structure.
 In order to start the compilation watch process, run `npm install` and then `npm start`. This
 will start the watcher, which will re-compile the available files when they are saved.
 
+### Asset loading
+
+The files from e.g. _src/MyFirstBlock/assets/src/styles_ will be saved to _src/MyFirstBlock/assets/dist/styles_. The
+_dist_ path should be used in the block.json file, thus: `"editorScript": "file:./assets/dist/scripts/editor.js"`.
+
+Each block has its own block.json, _src_ and _dist_ files. Depending on the configuration, these files may be merged by
+WordPress core or loaded inline. In some cases, the frontend assets might only be loaded if the block is placed
+in the content of the page being viewed.
+
+This code does not need to load any assets: that is taken care of by WordPress core.
+
 ## Gitignore
 
 The dist folder is excluded from this repository by a rule in the _.gitignore_ file. They must not be
